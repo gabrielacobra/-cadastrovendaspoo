@@ -12,11 +12,8 @@ namespace CadastroVendaPoo.classes{
         /// Esta classe constroi o objeto produto
         /// </summary>
         
-        public Produto()
-        {
-            
-        }
-
+        public Produto(){}
+                 
         /// <summary>
         /// Esta classe constroi o objeto e é necessário imputar os dados como parâmetros
         /// </summary>
