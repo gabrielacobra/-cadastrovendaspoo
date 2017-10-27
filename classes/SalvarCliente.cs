@@ -7,9 +7,9 @@ namespace CadastroVendaPoo.classes{
             string msg =""; //variável criada para auxiliar no retorno da mensagem do try catch
             StreamWriter arquivo=null;
             try{
+               arquivo=new StreamWriter("cadClientes.csv",true);
               if(cpfValido(cliente.Cpf)){     //se o CPF for válido, abre o arquivo de texto ou cria um com os dados do clietne e msg de criado com sucesso
-                arquivo=new StreamWriter("cadClientes.csv",true);
-                arquivo.WriteLine(cliente.Nome+";"+cliente.Email+";"+cliente.Cpf+";"+cliente.DataCadastro);
+               arquivo.WriteLine(cliente.Nome+";"+cliente.Email+";"+cliente.Cpf+";"+cliente.DataCadastro);
                 msg="Cliente salvo com sucesso :)";
             }
 
